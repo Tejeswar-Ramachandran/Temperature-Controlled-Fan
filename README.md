@@ -39,19 +39,8 @@ Circuit Diagram: (Refer Proteus)
 
 ![image](https://user-images.githubusercontent.com/69978515/129463736-326fb703-acbe-4c9c-b559-a6314fee432e.png)
 
-Outputs:
-
-NOTE: I couldn't obtain a plastic fan for the basic hardware demo, so instead I used a wheel as a substitute for a fan
-
-- Temperature > 35C (Rotation of wheel not visible in images)
-
-![image](https://user-images.githubusercontent.com/69978515/129463782-37a54dc1-d5b9-4f23-a26f-e547b8a4cae7.png)
-
-- 25C < Temperature < 35C (Rotation of wheel not visible in images)
-
-![image](https://user-images.githubusercontent.com/69978515/129463783-fc407931-8da2-4a5b-9e4c-083029ca50c9.png)
-
-- Temperature < 25C (Rotation of wheel not visible in images)
-
-![image](https://user-images.githubusercontent.com/69978515/129463785-546878df-3d8d-4ff5-a817-fc842727dfeb.png)
-
+Prog ISP:
+Directly uploading your ssembly language code to the 8051 board ight not work. The development board used here does not support USB Protocol. Instead we use the USB ISP Programmer to upload our code
+- Debug and Run your assembly languge code, and convert it into a hex file
+- Now, open the Prog ISP Software and upload the hex file there. Follow the intructions and set up the software for your board.
+- Now, you can upload the hex file for your code on to the 8051 board.
