@@ -5,7 +5,10 @@
 - The analog values obtained are then passed through an ADC converting it to digital, which then parses it to the Microcontroller for calculations. Based on the temperature, it decides the speed of the fan and displays the necessary information. 
 - We regulate the voltage the fan receives based on the temperature of the surroundings, if it is greater than 35°C, the fan runs at max speed, when it is between 25°C and 35°C at medium speed and turns off when the temperature is below 25°C.
 
-NOTE: I couldn't obtain a plastic fan for the basic hardware demo, so instead I used a wheel as a substitute for a fan
+NOTE: I couldn't obtain a plastic fan for the basic hardware demo, so instead I used a wheel as a substitute for a fan.
+
+NOTE: The rotation of the wheels cannot be visualized in the Output Images.
+
 
 The repository consists of:
 - The proteus simulation file 
@@ -40,7 +43,7 @@ Circuit Diagram: (Refer Proteus)
 ![image](https://user-images.githubusercontent.com/69978515/129463736-326fb703-acbe-4c9c-b559-a6314fee432e.png)
 
 Prog ISP:
-Directly uploading your ssembly language code to the 8051 board ight not work. The development board used here does not support USB Protocol. Instead we use the USB ISP Programmer to upload our code
-- Debug and Run your assembly languge code, and convert it into a hex file
-- Now, open the Prog ISP Software and upload the hex file there. Follow the intructions and set up the software for your board.
+Directly uploading your Assembly language code to the 8051 board might not work. The development board used here does not support USB Protocol. Instead we use the USB ISP Programmer that comes along with the kit, to upload our code.
+- Debug and Run your assembly language code, and generate a hex file.
+- Now, open the Prog ISP Software and upload the hex file there. Follow the intructions and initialize the software for your board.
 - Now, you can upload the hex file for your code on to the 8051 board.
